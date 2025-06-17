@@ -1,5 +1,6 @@
-<template>  
-    <Hero/>
+<template>
+    <Navbar/>
+    <Hero/>  
     <Services/>
     <Testimonials/>
     <Footer/>
