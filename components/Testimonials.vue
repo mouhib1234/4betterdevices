@@ -1,16 +1,23 @@
 <template>
-  <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-10 lg:px-[70px] border-b border-gray-100">
+  <section id="testimonials" class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-10 lg:px-[70px] border-b border-gray-100">
     <div class="mx-auto lg:mx-0 space-y-3 pb-16">
-      <p class="mt-6 text-lg/8 uppercase text-blue-600 font-semibold">Testimonials</p>
-      <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">What Our Clients Say About Us.</h2>
+      <div
+        class="text-4xl tracking-tight text-pretty text-gray-900 sm:text-5xl flex justify-center items-center gap-3 font-medium"
+      >
+        <span>What Our Clients Say</span>
+        <span class="font-serif italic text-[#0FB2B1]">About us.</span>
+    </div>
     </div>
 
     <div class="flex items-center justify-between space-x-4">
       <button
         @click="prevPage"
-        class="p-4 rounded-lg text-blue-500 items-center shadow hover:bg-gray-100 transition"
+        class="p-3 rounded-full shadow bg-[#1E40AF] text-white hover:bg-[#152D7C] transition"
       >
-        <span class="text-xl">&larr;</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
       </button>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -32,9 +39,12 @@
 
       <button
         @click="nextPage"
-        class="p-4 rounded-lg text-blue-500 items-center shadow hover:bg-gray-100 transition"
+        class="p-3 rounded-full shadow bg-[#1E40AF] text-white hover:bg-[#152D7C] transition"
       >
-        <span class="text-xl">&rarr;</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
       </button>
     </div>
 

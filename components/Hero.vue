@@ -13,7 +13,7 @@
     >
       <div class="absolute inset-0 z-0">
         <img
-          class="object-cover w-full h-full"
+          class="object-cover w-full h-[100vh]"
           :src="CoverPicture"
           alt=""
         />
@@ -26,51 +26,54 @@
           from-black/100
           via-black/65
           to-transparent
+          h-[100vh]
         "
       ></div>
 
       <div class="relative z-20">
         <div class="mx-auto px-6 sm:px-8 lg:px-[100px]">
           <div class="w-full lg:w-2/3 xl:w-1/2">
-            <span
-              class="
-                inline-block
-                rounded-full
-                bg-[#0FB2B1]/20
-                px-3 py-1
-                text-sm font-semibold
-                text-[#0FB2B1]
-              "
-            >
-              Trusted MedTech Experts
-            </span>
 
-            <p class="mt-6 tracking-tighter text-white">
+            <p class="mt-10 tracking-tighter text-white">
               <span class="font-sans font-normal text-6xl">
                 We are experts in
               </span>
               <br />
-              <span class="font-serif italic font-normal text-7xl">
-                Medical Devices.
-              </span>
+              <span class="text-[#00c7c7] font-serif italic font-normal text-7xl">Medical Devices.</span>
             </p>
 
             <p
               class="
                 mt-6
-                text-lg sm:text-xl
-                font-sans font-normal
+                text-lg
+                sm:text-xl
+                font-sans
+                font-normal
                 leading-7
-                text-white text-opacity-70
+                text-white
+                text-opacity-70
               "
             >
-              We handle regulations, so you can focus on innovation and
-              growth.
+              We handle regulations, so you can focus on
+              <span
+                class="
+                  font-serif
+                  italic
+                "
+              >
+                Innovation
+              </span>
+              and
+              <span
+                class="
+                  font-serif
+                  italic
+                "
+              >
+                Growth.
+              </span>
             </p>
-
-            <p class="mt-4 text-lg text-gray-400">
-              Trusted by 10+ MedTech startups worldwide
-            </p>
+            
 
             <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
               <a

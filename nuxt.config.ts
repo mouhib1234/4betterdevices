@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxt/image'],
   app: {
     head: {
-      titleTemplate: '%s - 4BetterDevices',
+      titleTemplate: '%s 4BetterDevices',
     },
   },
   build: {
