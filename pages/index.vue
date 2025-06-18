@@ -2,6 +2,8 @@
     <Navbar/>
     <Hero/> 
     <Services/>
+    <Resources/>
     <Testimonials/>
+    <Metrics/>
     <Footer/>
 </template>

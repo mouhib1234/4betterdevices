@@ -1,6 +1,6 @@
 <template>
   <header
-    :class="[
+    :class="[ 
       'inset-x-0 top-0 z-50 lg:px-[100px] fixed p-4 transition-colors duration-300 ease-in-out',
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     ]"
@@ -31,10 +31,10 @@
       <div class="hidden lg:flex lg:gap-x-12">
         <a
           v-for="item in navigation"
-          :key="item?.name"
-          :href="item?.href"
+          :key="item.name"
+          :href="item.href"
           :class="[
-            'text-md transition-colors duration-300',
+            'text-md font-semibold transition-colors duration-300',
             isScrolled ? 'text-gray-800' : 'text-white'
           ]"
         >
@@ -45,7 +45,20 @@
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <button
           type="button"
-          class="inline-flex items-center justify-center px-5 py-2 font-sans bg-[#0FB2B1] text-base font-normal leading-7 transition-all duration-200 rounded-full text-white border-primary focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary hover:bg-white hover:text-black"
+          class="
+            relative inline-flex items-center justify-center
+            px-5 py-2 text-base font-semibold leading-7 font-sans
+            bg-[#0FB2B1] text-white rounded-full
+            border border-transparent
+            shadow-[0_4px_15px_rgba(15,178,177,0.5)]
+            ring-1 ring-[#0FB2B1] ring-opacity-50
+            transition-all duration-300 transform
+            hover:shadow-[0_6px_20px_rgba(15,178,177,0.7)]
+            hover:ring-opacity-100
+            hover:-translate-y-0.5
+            active:translate-y-0.5
+            focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#0FB2B1] focus:ring-offset-secondary
+          "
         >
           Talk to an expert
         </button>
@@ -79,17 +92,30 @@
             <div class="space-y-2 py-6">
               <a
                 v-for="item in navigation"
-                :key="item?.name"
-                :href="item?.href"
+                :key="item.name"
+                :href="item.href"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
               >
-                {{ item?.name }}
+                {{ item.name }}
               </a>
             </div>
             <div class="py-6">
               <button
                 type="button"
-                class="inline-flex items-center justify-center w-full px-5 py-2 font-sans bg-[#1B3A9F] text-base font-normal leading-7 transition-all duration-200 border-2 rounded-full text-white border-primary focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary hover:bg-white hover:text-black"
+                class="
+                  relative inline-flex items-center justify-center
+                  w-full px-5 py-2 text-base font-normal leading-7 font-sans
+                  bg-[#0FB2B1] text-white rounded-full
+                  border border-transparent
+                  shadow-[0_4px_15px_rgba(15,178,177,0.5)]
+                  ring-1 ring-[#0FB2B1] ring-opacity-50
+                  transition-all duration-300 transform
+                  hover:shadow-[0_6px_20px_rgba(15,178,177,0.7)]
+                  hover:ring-opacity-100
+                  hover:-translate-y-0.5
+                  active:translate-y-0.5
+                  focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#0FB2B1] focus:ring-offset-secondary
+                "
               >
                 Talk to an expert
               </button>
@@ -106,7 +132,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
-import LogoDefault from '@/assets/images/4BetterDevicesWhiteLogo.png';
+import LogoDefault from '@/assets/images/4BetterDevicesWhiteLogo.png'
 import LogoScrolled from '@/assets/images/4BetterDevicesLogo.png'
 
 const navigation = [

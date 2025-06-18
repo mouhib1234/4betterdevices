@@ -9,39 +9,109 @@
         lg:pb-32
         xl:pb-48
         2xl:pb-56
+        bg-black
+        h-[100vh]
       "
     >
-      <div class="absolute inset-0 z-0">
-        <img
-          class="object-cover w-full h-[100vh]"
-          :src="CoverPicture"
-          alt=""
-        />
+      <div class="absolute inset-0 z-0 lg:hidden">
+        <video
+          class="object-cover w-full h-full mix-blend-screen opacity-75"
+          autoplay
+          muted
+          loop
+          playsinline
+          :poster="CoverPicture"
+        >
+          <source :src="CoverVideo" type="video/mp4" />
+        </video>
+        <div
+          class="
+            absolute inset-0
+            z-10
+            bg-gradient-to-r
+            from-black/100
+            via-black/65
+            to-transparent
+          "
+        ></div>
       </div>
 
-      <div
+      <div class="absolute inset-0 z-0 hidden lg:block">
+        <div class="absolute inset-0 flex justify-end items-center">
+          <div class="relative w-[75%] h-full overflow-hidden">
+            <video
+              class="object-cover object-left w-full h-full bg-blend-overlay"
+              autoplay
+              muted
+              loop
+              playsinline
+              :poster="CoverPicture"
+            >
+              <source :src="CoverVideo" type="video/mp4" />
+            </video>
+            <div
+              class="
+                absolute inset-0
+                z-10
+                bg-gradient-to-r
+                from-black/100
+                via-black/20
+                to-transparent
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <svg
         class="
-          absolute inset-0 z-10
-          bg-gradient-to-r
-          from-black/100
-          via-black/65
-          to-transparent
+          absolute inset-0
+          z-[15]
+          pointer-events-none
           h-[100vh]
+          mix-blend-screen
+          opacity-40
         "
-      ></div>
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        width="100%"
+        height="100%"
+      >
+        <defs>
+          <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path
+              d="M10 0 L0 0 0 10"
+              fill="none"
+              stroke="#0FB2B1"
+              stroke-width="0.5"
+            />
+          </pattern>
+          <linearGradient id="fadeGradient" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#fff" stop-opacity="1" />
+            <stop offset="60%" stop-color="#fff" stop-opacity="1" />
+            <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+          </linearGradient>
+          <mask id="fadeMask">
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#fadeGradient)" />
+          </mask>
+        </defs>
+        <rect
+          x="0"
+          y="0"
+          width="100%"
+          height="100%"
+          fill="url(#smallGrid)"
+          mask="url(#fadeMask)"
+        />
+      </svg>
 
       <div class="relative z-20">
         <div class="mx-auto px-6 sm:px-8 lg:px-[100px]">
           <div class="w-full lg:w-2/3 xl:w-1/2">
-
             <p class="mt-10 tracking-tighter text-white">
-              <span class="font-sans font-normal text-6xl">
-                We are experts in
-              </span>
-              <br />
-              <span class="text-[#00c7c7] font-serif italic font-normal text-7xl">Medical Devices.</span>
+              <span class="font-sans font-normal text-6xl">We are experts in</span><br />
+              <span class="text-[#00c7c7] font-normal text-7xl">Medical Devices.</span>
             </p>
-
             <p
               class="
                 mt-6
@@ -54,52 +124,24 @@
                 text-opacity-70
               "
             >
-              We handle regulations, so you can focus on
-              <span
-                class="
-                  font-serif
-                  italic
-                "
-              >
-                Innovation
-              </span>
-              and
-              <span
-                class="
-                  font-serif
-                  italic
-                "
-              >
-                Growth.
-              </span>
+              We handle regulations. You focus on <span>growth.</span>
             </p>
-            
-
             <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
               <a
                 href="#"
                 role="button"
                 class="
-                  inline-flex items-center justify-center
-                  px-5 py-2
-                  font-sans text-base font-semibold
-                  transition-all duration-200
-                  border-2 border-transparent
-                  rounded-full
-                  bg-white sm:text-lg text-black
+                  inline-flex items-center justify-center font-semibold
+                  px-6 py-3 text-sm sm:text-base
+                  font-sans rounded-full
+                  bg-white text-black hover:bg-[#00c7c7] hover:text-white
                   hover:bg-opacity-90
-                  focus:outline-none focus:ring-2
-                  focus:ring-offset-2 focus:ring-primary
-                  focus:ring-offset-secondary
+                  focus:outline-none focus:ring-1 focus:ring-offset-secondary
                 "
               >
                 Talk to an expert
               </a>
-
-              <a
-                href="#services"
-                class="text-lg text-gray-300 hover:text-white"
-              >
+              <a href="#services" class="text-lg text-gray-300 hover:text-white">
                 Learn more about our services &rarr;
               </a>
             </div>
@@ -112,4 +154,5 @@
 
 <script setup lang="ts">
 import CoverPicture from '@/assets/images/HeroBanner.jpg';
+import CoverVideo from '@/assets/videos/BackgroundLoop.mp4';
 </script>

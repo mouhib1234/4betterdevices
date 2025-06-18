@@ -2,23 +2,21 @@
   <section
     id="services"
     aria-labelledby="services-heading"
-    class="bg-[#F9FAFC] py-24 sm:py-16"
+    class="relative overflow-hidden  py-24 sm:py-8"
   >
-    <div class="container mx-auto px-6 lg:px-20 py-8">
-      <header class="text-center mb-12">
+    <div class="container mx-auto px-6 lg:px-20 py-8 overflow-clip">
+      <header class="mb-12 ">
         <h2
           id="services-heading"
-          class="text-4xl tracking-tight text-gray-900 sm:text-5xl flex justify-center items-center gap-3 font-medium"
+          class="text-4xl tracking-tight text-gray-900 sm:text-5xl font-medium"
         >
-          <span>Our Expertise From</span>
-          <span class="font-serif italic text-[#0FB2B1]">
-            Insight to Impact
-          </span>
+          <span>Our </span>
+          <span class="text-[#0FB2B1]">Services.</span>
         </h2>
       </header>
 
       <div class="relative">
-        <!-- KEEP this background image absolutely positioned -->
+        <!-- this image is now clipped to the section bounds -->
         <img
           :src="BackgroundPicture"
           alt=""
@@ -31,15 +29,12 @@
             pointer-events-none   
             select-none  
             -top-40
+            
           "
         />
 
-        <!-- STATIC GRID OF CARDS -->
         <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div
-            v-for="service in services"
-            :key="service.name"
-          >
+          <div v-for="service in services" :key="service.name">
             <ServiceCard :service="service" />
           </div>
         </div>
@@ -90,7 +85,3 @@ const services: Service[] = [
   },
 ];
 </script>
-
-<style>
-/* You can now remove the .hide-scrollbar rules entirely */
-</style>

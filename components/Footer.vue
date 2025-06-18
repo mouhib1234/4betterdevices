@@ -75,19 +75,17 @@ const navigation = {
   ],
   resources: [
     { name: 'Blog', href: '#' },
-    { name: 'Free guides', href: '#' },
+    { name: 'Free Guides', href: '#' },
     { name: 'Webinars', href: '#' },
   ],
   aboutus: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
+    { name: 'Cesare Magri', href: '#' },
+    { name: 'Our Experts', href: '#' },
+    { name: 'Our Company', href: '#' },
   ],
   contactus: [
-    { name: 'Terms of service', href: '#' },
-    { name: 'Privacy policy', href: '#' },
-    { name: 'License', href: '#' },
+    { name: 'info@4betterdevices.com', href: '#' },
+    { name: 'Glogauer Str. 7 53117 Bonn, Germany', href: '#' },
   ],
   social: [
     {
