@@ -23,7 +23,7 @@
   </div>
 </div>
 
-    <div class="mx-auto px-6 lg:px-8 bg-[#1E40AF] py-10 rounded-2xl">
+    <div class="mx-auto px-6 lg:px-8 bg-[#1E40AF] py-10 rounded-3xl">
       <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
         <div v-for="stat in stats" :key="stat.id" class="mx-auto flex max-w-xs flex-col gap-y-4">
           <dt class="text-base/7 text-white">{{ stat.name }}</dt>

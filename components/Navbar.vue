@@ -6,7 +6,6 @@
     ]"
   >
     <nav class="mx-auto flex items-center p-0" aria-label="Global">
-      <!-- Logo -->
       <div class="flex">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
@@ -18,7 +17,6 @@
         </a>
       </div>
 
-      <!-- Mobile hamburger button -->
       <div class="flex lg:hidden ml-auto">
         <button
           type="button"
