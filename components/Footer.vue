@@ -65,7 +65,8 @@
 
 <script setup>
 import { defineComponent, h } from 'vue'
-import Logo from '@/assets/images/4BetterDevicesLogo.png';
+import Logo from '@/assets/images/4BetterDevicesLogo.png'
+
 
 const navigation = {
   services: [
