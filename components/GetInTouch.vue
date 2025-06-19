@@ -135,5 +135,4 @@
 </template>
 
 <script setup lang="ts">
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/24/outline'
 </script>
