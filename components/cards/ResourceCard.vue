@@ -1,18 +1,11 @@
 <template>
   <div class="p-6 bg-white shadow-lg border-gray-200 rounded-lg h-full">
-    <div class="relative mb-3 w-14 h-14 flex items-center justify-center">
-      <div class="absolute inset-0 bg-[#0FB2B1] opacity-10 rounded-full"></div>
-      <component
-        :is="service.icon"
-        class="relative z-10 w-8 h-8 text-gray-500 dark:text-[#0FB2B1]"
-      />
-    </div>
     <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-900">
-      {{ service.name }}
+      {{ resource.name }}
     </h5>
 
     <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-      {{ service.description }}
+      {{ resource.description }}
     </p>
 
     <a
@@ -43,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Service } from '@/composables/useService'
+import type { Resource } from '@/composables/useResource'
 
-const { service } = defineProps<{ service: Service }>()
+const { resource } = defineProps<{ resource: Resource }>()
 </script>

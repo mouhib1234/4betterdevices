@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-white">
-    <div class="mx-auto px-6 pt-16 pb-8 sm:pt-24 lg:px-[70px] lg:pt-32">
+    <div class="mx-auto px-6 pt-16 pb-8 sm:pt-24 lg:px-[70px] lg:pt-16">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8">
           <img class="h-9" :src="Logo" alt="Company name" />

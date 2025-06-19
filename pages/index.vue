@@ -5,5 +5,6 @@
     <Resources/>
     <Testimonials/>
     <Metrics/>
+    <GetInTouch/>
     <Footer/>
 </template>

@@ -107,16 +107,16 @@
 
       <div class="relative z-20">
         <div class="mx-auto px-6 sm:px-8 lg:px-[100px]">
-          <div class="w-full lg:w-2/3 xl:w-1/2">
+          <div class="w-full lg:w-2/3 xl:w-1/2 text-center sm:text-left">
             <p class="mt-10 tracking-tighter text-white">
-              <span class="font-sans font-normal text-6xl">We are experts in</span><br />
-              <span class="text-[#00c7c7] font-normal text-7xl">Medical Devices.</span>
+              <span class="font-sans font-normal text-7xl">We are experts in</span><br />
+              <span class="text-[#00c7c7] font-semibold text-7xl">Medical Devices.</span>
             </p>
             <p
               class="
                 mt-6
                 text-lg
-                sm:text-xl
+                sm:text-2xl
                 font-sans
                 font-normal
                 leading-7
@@ -131,18 +131,20 @@
                 href="#"
                 role="button"
                 class="
-                  inline-flex items-center justify-center font-semibold
-                  px-6 py-3 text-sm sm:text-base
-                  font-sans rounded-full
-                  bg-white text-black hover:bg-[#00c7c7] hover:text-white
-                  hover:bg-opacity-90
-                  focus:outline-none focus:ring-1 focus:ring-offset-secondary
+                  inline-flex items-center justify-center
+                  font-semibold font-sans
+                  px-8 py-4             
+                  text-lg sm:text-lg   
+                  rounded-full
+                  bg-white text-black
+                  hover:bg-[#00c7c7] hover:text-white hover:bg-opacity-90
+                  focus:outline-none focus:ring-2 focus:ring-[#00c7c7] focus:ring-offset-2
+                  shadow-lg      
+                  w-full sm:w-auto    
+                  transition           
                 "
               >
                 Talk to an expert
-              </a>
-              <a href="#services" class="text-lg text-gray-300 hover:text-white">
-                Learn more about our services &rarr;
               </a>
             </div>
           </div>
