@@ -1,9 +1,9 @@
-import ChemicalIcon from "~/Assets/icons/ChemicalIcon.vue";
-import EyeIcon from "~/Assets/icons/EyeIcon.vue";
-import HammerIcon from "~/Assets/icons/HammerIcon.vue";
-import StethoscopeIcon from "~/Assets/icons/stethoscopeIcon.vue";
-import SurgicalknifeIcon from "~/Assets/icons/surgicalknifeIcon.vue";
-import WarningIcon from "~/Assets/icons/WarningIcon.vue";
+import ChemicalIcon from "~/assets/icons/ChemicalIcon.vue";
+import EyeIcon from "~/assets/icons/EyeIcon.vue";
+import HammerIcon from "~/assets/icons/HammerIcon.vue";
+import StethoscopeIcon from "~/assets/icons/stethoscopeIcon.vue";
+import SurgicalknifeIcon from "~/assets/icons/surgicalknifeIcon.vue";
+import WarningIcon from "~/assets/icons/WarningIcon.vue";
 
 export interface Service {
   icon: Component;
