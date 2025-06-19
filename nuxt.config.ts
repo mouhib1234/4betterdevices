@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  
+  nitro: {
+    preset: 'netlify'
+  },
   modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxt/image'],
   app: {
     head: {
