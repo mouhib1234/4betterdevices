@@ -128,7 +128,7 @@
             </p>
             <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
               <a
-                href="#"
+                href="#contact"
                 role="button"
                 class="
                   inline-flex items-center justify-center

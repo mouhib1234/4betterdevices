@@ -3,8 +3,8 @@
     <Hero/> 
     <Services/>
     <Resources/>
-    <Testimonials/>
     <Metrics/>
+    <Testimonials/>
     <GetInTouch/>
     <Footer/>
 </template>
