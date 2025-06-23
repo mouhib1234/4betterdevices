@@ -1,21 +1,60 @@
 import RaqaLogo from '@/assets/images/Raqalogo.png'
 import evidenceLogo from '@/assets/images/evidenceLogo.png'
+import EvidenceDashboard from '@/assets/images/EvidenceDashboard.png'
 
+
+export enum Software {
+  Evidence   = 'evidence',
+  RaqaStore  = 'raqaStore',
+  Guidances =  'Guidances'
+}
 
 export interface Resource {
-  name: string;
-  description: string;
+  key: Software
+  title: string        
+  logo: string     
+  description: string 
+  link: string
 }
 
 export const resources: Resource[] = [
   {
-    name: 'Regulatory Search Engine',
+    key: Software.Evidence,
+    title: 'Automated Review',
+    logo: evidenceLogo,
     description:
-      'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+      'Evidence is our lightweight client app for on the go data capture and verification.',
+    link:"https://evidence.systems/"
   },
   {
-    name: 'Automated Review',
+    key: Software.RaqaStore,
+    title: 'Regulatory Search Engine',
+    logo: RaqaLogo,
     description:
-      'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+      'Raqa Store powers your full-stack regulatory listings, search, and analytics dashboard.',
+    link:""
+  },
+  {
+    key: Software.Guidances,
+    title: 'Guidances & Newsletter',
+    logo: RaqaLogo,
+    description:
+      'Raqa Store powers your full-stack regulatory listings, search, and analytics dashboard.',
+    link:""
+  },
+]
+
+export function getResourceByKey(key: string): Resource | null {
+  return resources.find(r => r.key === key) || null
+}
+
+import { ref, type Ref } from 'vue'
+export function useResource(key: Ref<string> | string) {
+  const resource = ref<Resource | null>(null)
+  const k = typeof key === 'string' ? key : key.value
+  resource.value = getResourceByKey(k)
+  return {
+    resource,
+    notFound: resource.value === null
   }
-];
+}

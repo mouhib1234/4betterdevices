@@ -106,7 +106,7 @@
       </svg>
 
       <div class="relative z-20">
-        <div class="mx-auto px-6 sm:px-8 lg:px-[100px]">
+        <div class="mx-auto px-6 sm:px-8 lg:px-[70px]">
           <div class="w-full lg:w-2/3 xl:w-1/2 text-center sm:text-left">
             <p class="mt-10 tracking-tighter text-white">
               <span class="font-sans font-normal text-7xl">We are experts in</span><br />

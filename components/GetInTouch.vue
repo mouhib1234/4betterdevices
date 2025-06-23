@@ -7,47 +7,9 @@
                text-white overflow-hidden bg-gradient-to-b
                from-black/100 via-black/40 to-[#00c7c7]/20"
       >
-        <div class="absolute inset-x-0 bottom-0 -z-20 lg:h-full pt-80 bg-black">
-          <video
-            class="object-cover w-full h-full mix-blend-screen opacity-100"
-            autoplay
-            muted
-            loop
-            playsinline
-          >
-            <source :src="CoverVideo" type="video/mp4" />
-          </video>
+        <div class="absolute inset-x-0 bottom-0 -z-20 lg:h-full pt-80 bg-black">  
         </div>
         <div class="absolute inset-x-0 bottom-0 -z-10 h-32 bg-gradient-to-t from-black to-transparent"></div>
-        <svg
-          class="absolute inset-0 z-10 pointer-events-none h-[100vh] mix-blend-screen opacity-50"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          width="100%"
-          height="100%"
-        >
-          <defs>
-            <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
-              <path d="M10 0 L0 0 0 10" fill="none" stroke="#0FB2B1" stroke-width="0.5" />
-            </pattern>
-            <linearGradient id="fadeGradient" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#fff" stop-opacity="1" />
-              <stop offset="60%" stop-color="#fff" stop-opacity="1" />
-              <stop offset="100%" stop-color="#fff" stop-opacity="0" />
-            </linearGradient>
-            <mask id="fadeMask">
-              <rect x="0" y="0" width="100%" height="100%" fill="url(#fadeGradient)" />
-            </mask>
-          </defs>
-          <rect
-            x="0"
-            y="0"
-            width="100%"
-            height="100%"
-            fill="url(#smallGrid)"
-            mask="url(#fadeMask)"
-          />
-        </svg>
         <div class="relative mx-auto lg:mx-0 max-w-lg">
           <h2 class="text-4xl font-semibold tracking-tight sm:text-5xl">
             Unlock Market Access, Contact us.

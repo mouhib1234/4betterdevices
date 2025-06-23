@@ -1,6 +1,6 @@
 import ChemicalIcon from "~/assets/icons/ChemicalIcon.vue";
-import EyeIcon from "~/assets/icons/EyeIcon.vue";
 import HammerIcon from "~/assets/icons/HammerIcon.vue";
+import RadarIcon from "~/assets/icons/RadarIcon.vue";
 import StethoscopeIcon from "~/assets/icons/stethoscopeIcon.vue";
 import SurgicalknifeIcon from "~/assets/icons/surgicalknifeIcon.vue";
 import WarningIcon from "~/assets/icons/WarningIcon.vue";
@@ -31,7 +31,7 @@ export const services: Service[] = [
       'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
   },
   {
-    icon: EyeIcon,
+    icon: RadarIcon,
     name: 'Post market surveillance and follow up',
     description:
       'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',

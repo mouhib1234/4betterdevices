@@ -1,27 +1,7 @@
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    :class="props.class"
-  >
-    <g transform="rotate(-20 12 12)">
-      <line x1="2" y1="12" x2="6" y2="12" />
-
-      <rect x="6" y="11" width="2" height="2" rx="0.5" />
-
-      <rect x="8" y="9" width="10" height="6" rx="1" />
-
-      <line x1="18" y1="9" x2="22" y2="5" />
-      <line x1="18" y1="15" x2="22" y2="19" />
-
-      <rect x="20" y="4" width="2" height="16" rx="1" />
-    </g>
-  </svg>
+  <svg     
+  :class="props.class"
+  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3l4 4" /><path d="M19 5l-4.5 4.5" /><path d="M11.5 6.5l6 6" /><path d="M16.5 11.5l-6.5 6.5h-4v-4l6.5 -6.5" /><path d="M7.5 12.5l1.5 1.5" /><path d="M10.5 9.5l1.5 1.5" /><path d="M3 21l3 -3" /></svg>
 </template>
 
 <script setup lang="ts">

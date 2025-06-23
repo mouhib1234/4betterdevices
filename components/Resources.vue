@@ -17,10 +17,10 @@
         </h2>
       </header>
 
-        <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+        <div class="relative z-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-6">
           <div
             v-for="resource in resources"
-            :key="resource.name"
+            :key="resource.title"
           >
             <ResourceCard :resource="resource" />
           </div>
