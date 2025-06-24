@@ -3,8 +3,8 @@
     id="services"
     aria-labelledby="services-heading"
     class="relative overflow-hidden py-8 sm:py-8
-           bg-gradient-to-br from-cyan-900 to-cyan-500
-           backdrop-blur-sm"
+           bg-gray-50
+           backdrop-blur-sm border border-gray-100"
   >
     <div
       class="absolute inset-y-0 right-0 w-full sm:w-1/2 lg:w-1/3 h-full pointer-events-none"
@@ -12,8 +12,7 @@
       <img
         :src="CoverPicture"
         alt=""
-        class="object-cover w-full h-full
-               opacity-40 mix-blend-overlay"
+        class="object-cover w-full h-full"
       />
     </div>
 
@@ -21,10 +20,10 @@
       <header class="mb-12">
         <h2
           id="services-heading"
-          class="text-4xl tracking-tight sm:text-5xl font-medium text-white"
+          class="text-4xl tracking-tight sm:text-5xl font-medium text-black"
         >
           <span>Our </span>
-          <span class="text-cyan-200">Services.</span>
+          <span class="text-cyan-500">Services.</span>
         </h2>
       </header>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

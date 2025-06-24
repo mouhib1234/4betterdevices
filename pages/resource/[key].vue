@@ -28,15 +28,18 @@
       </a>
     </div>
 
-    <div v-else class="mt-8 text-gray-500">
-      Loading…
+    <div >
+      
     </div>
   </div>
+
+  
 </template>
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import { useResource } from '@/composables/useResource'
+import GuidanceCard from '@/components/cards/GuidanceCard.vue'
 
 const route = useRoute()
 const key = route.params.key as string

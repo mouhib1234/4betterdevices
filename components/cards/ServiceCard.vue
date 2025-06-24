@@ -51,7 +51,7 @@
              bg-clip-text text-transparent
              bg-gradient-to-r from-cyan-800 to-cyan-500
              group-hover:text-white group-hover:bg-none
-             transition-colors duration-300"
+             transition-colors duration-300 line-clamp-4"
     >
       {{ service.description }}
     </p>
