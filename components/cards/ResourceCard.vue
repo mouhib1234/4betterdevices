@@ -11,7 +11,7 @@
             <img
               :src="resource.logo"
               :alt="resource.title + ' logo'"
-              class="w-16 h-16 object-contain"
+              class="w-auto h-18 object-contain"
             />
           </div>
         </div>

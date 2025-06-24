@@ -4,7 +4,7 @@
     aria-labelledby="services-heading"
     class="bg-white py-24 sm:py-16"
   >
-    <div class="mx-auto px-6 lg:px-20 py-8">
+    <div class="mx-auto px-6 lg:px-20">
       <header class="mb-12">
         <h2
           id="services-heading"

@@ -1,6 +1,6 @@
 import RaqaLogo from '@/assets/images/Raqalogo.png'
 import evidenceLogo from '@/assets/images/evidenceLogo.png'
-import EvidenceDashboard from '@/assets/images/EvidenceDashboard.png'
+import GuidanceLogo from '@/assets/images/GuidanceLogo.png'
 
 
 export enum Software {
@@ -37,7 +37,7 @@ export const resources: Resource[] = [
   {
     key: Software.Guidances,
     title: 'Guidances & Newsletter',
-    logo: RaqaLogo,
+    logo: GuidanceLogo,
     description:
       'Raqa Store powers your full-stack regulatory listings, search, and analytics dashboard.',
     link:""

@@ -3,7 +3,6 @@
     <Hero/> 
     <Services/>
     <Resources/>
-    <Metrics/>
     <Testimonials/>
     <GetInTouch/>
     <Footer/>

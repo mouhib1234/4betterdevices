@@ -20,7 +20,6 @@
           muted
           loop
           playsinline
-          :poster="CoverPicture"
         >
           <source :src="CoverVideo" type="video/mp4" />
         </video>
@@ -45,7 +44,6 @@
               muted
               loop
               playsinline
-              :poster="CoverPicture"
             >
               <source :src="CoverVideo" type="video/mp4" />
             </video>
@@ -155,6 +153,5 @@
 </template>
 
 <script setup lang="ts">
-import CoverPicture from '@/assets/images/HeroBanner.jpg';
 import CoverVideo from '@/assets/videos/BackgroundLoop.mp4';
 </script>
