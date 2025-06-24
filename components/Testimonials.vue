@@ -1,19 +1,30 @@
 <template>
   <section
     id="testimonials"
-    class="relative isolate overflow-hidden bg-gray-50 px-4 py-16 sm:px-6 lg:px-[70px] sm:py-24 border-b border-gray-100"
+    class="relative isolate overflow-hidden bg-white
+           px-4 py-16 sm:px-6 lg:px-[70px] sm:py-24 border-b border-gray-100"
   >
     <div class="w-full">
+      <!-- Header -->
       <div class="flex flex-col sm:flex-row items-center justify-between pb-12">
-        <h2 class="text-3xl sm:text-5xl font-medium tracking-tight text-gray-900 text-center sm:text-left">
+        <h2
+          class="text-3xl sm:text-5xl font-medium tracking-tight text-gray-900 text-center sm:text-left"
+        >
           <span>What Our Clients Say</span>
-          <span class="text-[#0FB2B1]"> About us.</span>
+          <span
+            class="text-cyan-500 bg-clip-text"
+          >
+            About us.
+          </span>
         </h2>
         <div class="hidden sm:flex items-center space-x-2">
           <button
             @click="prevPage"
             :disabled="currentPage === 0"
-            class="p-2 sm:p-3 rounded-full shadow bg-[#1E40AF] text-white hover:bg-[#152D7C] transition disabled:opacity-50"
+            class="p-2 sm:p-3 rounded-full shadow
+                   bg-gradient-to-br from-cyan-600 to-cyan-400
+                   hover:from-cyan-500 hover:to-cyan-300
+                   text-white transition disabled:opacity-50"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -23,7 +34,10 @@
           <button
             @click="nextPage"
             :disabled="currentPage >= pageCount - 1"
-            class="p-2 sm:p-3 rounded-full shadow bg-[#1E40AF] text-white hover:bg-[#152D7C] transition disabled:opacity-50"
+            class="p-2 sm:p-3 rounded-full shadow
+                   bg-gradient-to-br from-cyan-600 to-cyan-400
+                   hover:from-cyan-500 hover:to-cyan-300
+                   text-white transition disabled:opacity-50"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -33,6 +47,7 @@
         </div>
       </div>
 
+      <!-- Cards -->
       <div class="flex items-center justify-center gap-2">
         <TestimonialCard
           v-if="slice[0]"
@@ -53,13 +68,16 @@
         />
       </div>
 
+      <!-- Pagination dots -->
       <div class="flex justify-center mt-10 space-x-2">
         <span
           v-for="n in pageCount"
           :key="n"
           @click="currentPage = n - 1"
-          class="h-2 w-5 sm:w-6 rounded-full cursor-pointer"
-          :class="currentPage === (n - 1) ? 'bg-blue-600' : 'bg-gray-300'"
+          class="h-2 w-5 sm:w-6 rounded-full cursor-pointer transition-all"
+          :class="currentPage === (n - 1)
+            ? 'bg-cyan-500'
+            : 'bg-cyan-200'"
         />
       </div>
     </div>

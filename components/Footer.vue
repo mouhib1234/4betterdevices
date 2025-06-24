@@ -83,14 +83,17 @@ import Logo from '@/assets/images/4BetterDevicesLogo.png'
 
 const navigation = {
   services: [
-    { name: 'Clinical Affairs', href: '#' },
-    { name: 'Regulatory Affairs', href: '#' },
-    { name: 'Quality Assurance', href: '#' },
+    { name: 'Clinical strategy & clinical evaluation', href: '#' },
+    { name: 'Market access EU & US & International', href: '#' },
+    { name: 'Real world evidence and studies', href: '#' },
+    { name: 'Post market surveillance and follow up', href: '#' },
+    { name: 'Risk management', href: '#' },
+    { name: 'Biocompatibility', href: '#' },
   ],
   resources: [
-    { name: 'Blog', href: '#' },
-    { name: 'Free Guides', href: '#' },
-    { name: 'Webinars', href: '#' },
+    { name: 'Automated Review', href: '#' },
+    { name: 'Regulatory Search Engine', href: '#' },
+    { name: 'Guidances & Newsletter', href: '#' },
   ],
   aboutus: [
     { name: 'Cesare Magri', href: '#' },

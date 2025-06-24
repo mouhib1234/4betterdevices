@@ -50,7 +50,7 @@
           class="
             relative inline-flex items-center justify-center
             px-5 py-2 text-base font-semibold leading-7 font-sans
-            bg-[#0FB2B1] text-white rounded-full
+            bg-cyan-500 text-white rounded-full
             border border-transparent
             shadow-[0_4px_15px_rgba(15,178,177,0.5)]
             ring-1 ring-[#0FB2B1] ring-opacity-50
@@ -59,7 +59,7 @@
             hover:ring-opacity-100
             hover:-translate-y-0.5
             active:translate-y-0.5
-            focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#0FB2B1] focus:ring-offset-secondary
+            focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-cyan-500 focus:ring-offset-secondary
           "
         >
           Talk to an expert
@@ -137,8 +137,8 @@ import LogoDefault from '@/assets/images/4BetterDevicesWhiteLogo.png'
 import LogoScrolled from '@/assets/images/4BetterDevicesLogo.png'
 
 const navigation = [
-  { name: 'Services', href: '#services' },
   { name: 'Resources', href: '#resources' },
+  { name: 'Services', href: '#services' },
   { name: 'Testimonials', href: '#testimonials' },
 ]
 

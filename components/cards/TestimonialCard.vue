@@ -1,6 +1,6 @@
 <template>
   <figure class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl relative h-full">
-    <div class="absolute top-4 left-4 text-blue-600 text-5xl z-10" aria-hidden="true">
+    <div class="absolute top-4 left-4 text-cyan-600 text-5xl z-10" aria-hidden="true">
       “
     </div>
 
@@ -18,7 +18,7 @@
       <a
         v-if="isOverflowing && !expanded"
         @click="expanded = true"
-        class="absolute bottom-0 right-0 bg-white pl-1 italic text-lg text-blue-500 cursor-pointer"
+        class="absolute bottom-0 right-0 bg-white pl-1 italic text-lg text-cyan-500 cursor-pointer"
       >
         ...Read more
       </a>
@@ -27,7 +27,7 @@
     <a
       v-if="expanded"
       @click="expanded = false"
-      class="mt-2 pl-1 inline-block italic text-lg text-blue-500 cursor-pointer"
+      class="mt-2 pl-1 inline-block italic text-lg text-cyan-500 cursor-pointer"
     >
       Show less
     </a>

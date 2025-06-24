@@ -1,28 +1,69 @@
 <template>
-  <div class="relative group futuristic-card p-6 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden h-full">
-    <div class="absolute top-0 left-0 w-2 h-12 bg-[#0FB2B1] opacity-75 transform -translate-x-1 -translate-y-1 group-hover:opacity-100 transition-opacity"></div>
-    <div class="absolute bottom-0 right-0 w-12 h-2 bg-[#0FB2B1] opacity-75 transform translate-x-1 translate-y-1 group-hover:opacity-100 transition-opacity"></div>
+  <div
+    class="relative group p-6 
+           bg-gradient-to-br from-cyan-100 to-cyan-50 
+           hover:from-cyan-600 hover:to-cyan-400 
+           border border-cyan-500/20 
+           rounded-lg shadow-lg overflow-hidden h-full 
+           transition-colors duration-300"
+  >
+    <!-- Corner accents -->
+    <div
+      class="absolute top-0 left-0 w-2 h-12 
+             bg-cyan-500/75 
+             transform -translate-x-1 -translate-y-1 
+             group-hover:bg-cyan-300/90 
+             transition-colors"
+    ></div>
+    <div
+      class="absolute bottom-0 right-0 w-12 h-2 
+             bg-cyan-500/75 
+             transform translate-x-1 translate-y-1 
+             group-hover:bg-cyan-300/90 
+             transition-colors"
+    ></div>
 
-    <div class="absolute inset-0 pointer-events-none before:absolute before:content-[''] before:block before:w-[200%] before:h-[200%] before:bg-gradient-to-r before:from-transparent before:via-[#0FB2B1]/20 before:to-transparent before:top-[-50%] before:left-[-50%] before:transform before:rotate-45 before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
-
+    <!-- Icon -->
     <div class="relative mb-4 w-14 h-14 flex items-center justify-center z-10">
-      <div class="absolute inset-0 bg-[#0FB2B1] opacity-10 rounded-full"></div>
+      <div class="absolute inset-0 bg-cyan-500/10 rounded-full"></div>
       <component
         :is="service.icon"
-        class="relative z-10 w-8 h-8 text-[#0FB2B1]"
+        class="relative z-10 w-8 h-8 text-cyan-600 
+               group-hover:text-white 
+               transition-colors duration-300"
       />
     </div>
 
-    <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 z-10">
+    <!-- Title with gradient text -->
+    <h5
+      class="mb-2 text-xl font-semibold tracking-tight
+             bg-clip-text text-transparent
+             bg-gradient-to-r from-cyan-800 to-cyan-500
+             group-hover:text-white group-hover:bg-none
+             transition-colors duration-300"
+    >
       {{ service.name }}
     </h5>
-    <p class="mb-4 font-normal text-gray-600 z-10">
+
+    <!-- Description with lighter gradient -->
+    <p
+      class="mb-4 font-normal
+             bg-clip-text text-transparent
+             bg-gradient-to-r from-cyan-800 to-cyan-500
+             group-hover:text-white group-hover:bg-none
+             transition-colors duration-300"
+    >
       {{ service.description }}
     </p>
 
+    <!-- Link with gradient underline text -->
     <a
       href="#"
-      class="inline-flex font-medium items-center text-[#0FB2B1] hover:underline z-10"
+      class="inline-flex font-medium items-center
+             bg-clip-text text-transparent
+             bg-gradient-to-r from-cyan-800 to-cyan-500
+             group-hover:text-white group-hover:bg-none
+             hover:underline transition-colors duration-300 z-10"
     >
       Explore more
       <svg
@@ -52,29 +93,3 @@ import type { Service } from '@/composables/useService'
 
 const { service } = defineProps<{ service: Service }>()
 </script>
-
-<style scoped>
-.futuristic-card {
-  transform: perspective(800px) translateZ(0);
-  transition: transform 0.3s ease;
-}
-.futuristic-card.group-hover {
-  transform: perspective(800px) translateZ(10px) rotateX(1deg) rotateY(-1deg);
-}
-.futuristic-card::after {
-  content: '';
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.2) 50%, transparent 100%);
-  animation: scan 3s linear infinite;
-  pointer-events: none;
-}
-@keyframes scan {
-  0%   { top: -100%; }
-  50%  { top: 100%; }
-  100% { top: -100%; }
-}
-</style>

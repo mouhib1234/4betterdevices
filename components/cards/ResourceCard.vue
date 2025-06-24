@@ -4,7 +4,6 @@
       :to="`/resource/${resource.key}`"
       class="group relative block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
     >
-      <!-- ALWAYS vertical now -->
       <div class="flex flex-col">
         <div class="flex-shrink-0 flex items-center justify-center p-5 bg-blue-50">
           <div class="w-24 h-24 flex items-center justify-center">
@@ -18,7 +17,7 @@
 
         <div class="p-5 flex flex-col justify-between flex-1">
           <div>
-            <span class="text-xs font-medium text-blue-700 uppercase">
+            <span class="text-sm font-medium text-cyan-600 uppercase">
               {{ resource.key }}
             </span>
             <h2 class="mt-1 text-xl font-semibold text-gray-900">

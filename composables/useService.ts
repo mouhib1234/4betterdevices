@@ -14,7 +14,7 @@ export interface Service {
 export const services: Service[] = [
   {
     icon: StethoscopeIcon,
-    name: 'Clinical strategy and clinical evaluation',
+    name: 'Clinical strategy & clinical evaluation',
     description:
       'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
   },

@@ -1,8 +1,8 @@
 <template>
     <Navbar/>
     <Hero/> 
-    <Services/>
     <Resources/>
+    <Services/>
     <Testimonials/>
     <GetInTouch/>
     <Footer/>

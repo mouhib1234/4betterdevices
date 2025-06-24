@@ -11,7 +11,7 @@
           class="text-4xl tracking-tight text-gray-900 sm:text-5xl font-medium"
         >
           <span>Our</span>
-          <span class="text-[#0FB2B1]">
+          <span class="text-cyan-500">
             Resources.
           </span>
         </h2>
