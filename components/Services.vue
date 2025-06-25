@@ -43,7 +43,7 @@
         >
           <span>Our </span>
           <span
-            class="bg-gradient-to-r from-[#0ea2a1] to-[#3fc1c1] bg-clip-text text-transparent"
+            class="bg-gradient-to-r from-[#a20e68] to-[#0fb2b1] bg-clip-text text-transparent"
           >
             Services.
           </span>

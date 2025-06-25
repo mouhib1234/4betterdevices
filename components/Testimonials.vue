@@ -1,7 +1,7 @@
 <template>
   <section
     id="testimonials"
-    class="relative isolate overflow-hidden bg-[#e7f7f7]
+    class="relative isolate overflow-hidden bg-[#e7f7f7] 
            px-4 py-16 sm:px-6 lg:px-[70px] sm:py-24 border-b border-gray-100"
   >
     <div class="w-full">
@@ -11,7 +11,7 @@
         >
           <span>What Our Clients Say</span>
           <span
-            class="bg-gradient-to-r from-[#0ea2a1] to-[#3fc1c1]
+            class="bg-gradient-to-r from-[#a20e68] to-[#0fb2b1]
                    bg-clip-text text-transparent"
           >
             About us.

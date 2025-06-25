@@ -4,12 +4,12 @@
 
       <div
         class="relative px-6 py-12 sm:py-12 lg:px-20 overflow-hidden text-white
-               bg-gradient-to-br from-[#086261] to-[#0fb2b1]
+               bg-gradient-to-br from-[#0b7e7e] to-[#c13f8e]
                backdrop-blur-sm"
       >
         <div class="absolute top-0 -left-16 w-64 h-64 bg-gradient-to-tr from-[#3fc1c1] to-[#91cdcb]
                     rounded-full opacity-30 blur-3xl animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-0 -right-16 w-64 h-64 bg-gradient-to-tr from-[#5ecbcb] to-[#b5e7e7]
+        <div class="absolute bottom-0 -right-16 w-64 h-64 bg-gradient-to-tr from-[#cb5ea1] to-[#e7b5d3]
                     rounded-full opacity-30 blur-3xl animate-blob animation-delay-4000"></div>
 
         <img
