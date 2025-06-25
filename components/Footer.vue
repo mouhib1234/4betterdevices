@@ -43,15 +43,8 @@
               </ul>
             </div>
           </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm/6 font-semibold text-gray-900">About us</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation.aboutus" :key="item.name">
-                  <a :href="item.href" class="text-sm/6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
-                </li>
-              </ul>
-            </div>
+          <div class="md:grid md:grid-cols-1">
+
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm/6 font-semibold text-gray-900">Contact us</h3>
               <ul role="list" class="mt-6 space-y-4">
