@@ -1,10 +1,9 @@
 <template>
   <section
     id="testimonials"
-    class="relative isolate overflow-hidden bg-[#e7f7f7] 
-           px-4 py-16 sm:px-6 lg:px-[70px] sm:py-24 border-b border-gray-100"
+    class="relative z-20 isolate overflow-hidden bg-[#e7f7f7] 
+           px-4 py-16 sm:px-6 mx-auto lg:px-[70px] sm:py-24 border-b border-gray-100"
   >
-    <div class="w-full">
       <div class="flex flex-col sm:flex-row items-center justify-between pb-20">
         <h2
           class="text-3xl sm:text-5xl font-medium tracking-tight text-gray-900 text-center sm:text-left"
@@ -71,7 +70,6 @@
           :class="currentIndex === i ? 'bg-[#0fb2b1]' : 'bg-[#91cdcb]'"
         />
       </div>
-    </div>
   </section>
 </template>
 

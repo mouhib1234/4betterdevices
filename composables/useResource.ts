@@ -17,7 +17,7 @@ import { ref, type Ref } from 'vue'
 export enum Software {
   Evidence  = 'evidence',
   RaqaStore = 'raqaStore',
-  Guidances = 'Guidances',
+  Guidances = 'Guidance',
 }
 
 export interface Post {
@@ -100,7 +100,7 @@ export const resources: Resource[] = [
   },
   {
     key: Software.Guidances,
-    title: 'Guidances & Newsletter',
+    title: 'Guidance & Newsletter',
     logo: GuidanceLogo,
     description:
       'All the latest guidance documents and our periodic newsletters in one place.',

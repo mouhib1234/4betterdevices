@@ -1,5 +1,5 @@
 <template>
-  <figure class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl relative h-full">
+  <figure class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl relative h-full">
     <div class="absolute top-6 left-4 text-[#b20f72] text-5xl select-none" aria-hidden="true">❝</div>
 
     <div class="relative mt-8 pl-2">
@@ -31,7 +31,7 @@
     </a>
 
     <figcaption class="flex items-center justify-between mt-6 px-2">
-      <div class="font-semibold text-gray-900">{{ testimonial.name }}</div>
+      <div class="font-semibold text-gray-900">{{ testimonial?.name }}</div>
       <img :src="testimonial.logo" alt="Logo" class="h-5 w-auto object-cover" />
     </figcaption>
   </figure>
