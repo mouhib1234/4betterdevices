@@ -25,7 +25,6 @@ export interface Post {
   title: string
   href: string
   imageUrl: string
-  description?: string
 }
 
 export interface Resource {
@@ -42,8 +41,6 @@ const guidancePosts: Post[] = [
     id: 1,
     title: '4BetterDevices - EAA (v.1)',
     href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo.…',
     imageUrl: image1,
   },
   {
@@ -56,40 +53,30 @@ const guidancePosts: Post[] = [
     id: 3,
     title: '4BetterDevices - How to use MDR Rule 11 - v.1.1',
     href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo.…',
     imageUrl: image3,
   },
   {
     id: 4,
     title: '4BetterDevices - Medical background SOTA analyses (v.2)',
     href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo.…',
     imageUrl: image4,
   },
   {
     id: 5,
     title: '4BetterDevices - Post-market searches - v2',
     href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo.…',
     imageUrl: image5,
   },
   {
     id: 6,
     title: '4BetterDevices - Surveys - v.1',
     href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo.…',
     imageUrl: image6,
   },
   {
     id: 7,
     title: '4BetterDevices - Well-established technology (v.1)',
     href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo.…',
     imageUrl: image7,
   },
 ]
@@ -109,7 +96,7 @@ export const resources: Resource[] = [
     logo: RaqaLogo,
     description:
       'Raqa Store powers your full-stack regulatory listings, search, and analytics dashboard.',
-    link: 'https://evidence.systems/',
+    link: '',
   },
   {
     key: Software.Guidances,

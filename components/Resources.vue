@@ -2,7 +2,7 @@
   <section
     id="resources"
     aria-labelledby="services-heading"
-    class="bg-white py-24 sm:py-16"
+    class="bg-[#f7e7f1] py-24 sm:py-16"
   >
     <div class="mx-auto px-6 lg:px-20">
       <header class="mb-12">
@@ -11,7 +11,8 @@
           class="text-4xl tracking-tight text-gray-900 sm:text-5xl font-medium"
         >
           <span>Our</span>
-          <span class="text-cyan-500">
+          <span class="bg-gradient-to-r from-[#a20e68] to-[#0b7e7e]
+                   bg-clip-text text-transparent">
             Resources.
           </span>
         </h2>
@@ -31,7 +32,5 @@
 
 <script setup lang="ts">
 import ResourceCard from './cards/ResourceCard.vue';
-
-
 
 </script>

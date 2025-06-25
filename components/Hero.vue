@@ -108,7 +108,7 @@
           <div class="w-full lg:w-2/3 xl:w-1/2 text-center sm:text-left">
             <p class="mt-10 tracking-tighter text-white">
               <span class="font-sans font-normal text-7xl">We are experts in</span><br />
-              <span class="text-[#00c7c7] font-semibold text-7xl">Medical Devices.</span>
+              <span class="text-[#0fb2b1] font-semibold text-7xl">Medical Devices.</span>
             </p>
             <p
               class="
@@ -135,8 +135,8 @@
                   text-lg sm:text-lg   
                   rounded-full
                   bg-white text-black
-                  hover:bg-[#00c7c7] hover:text-white hover:bg-opacity-90
-                  focus:outline-none focus:ring-2 focus:ring-[#00c7c7] focus:ring-offset-2
+                  hover:bg-[#0fb2b1] hover:text-white hover:bg-opacity-90
+                  focus:outline-none focus:ring-2 focus:ring-[#0fb2b1] focus:ring-offset-2
                   shadow-lg      
                   w-full sm:w-auto    
                   transition           

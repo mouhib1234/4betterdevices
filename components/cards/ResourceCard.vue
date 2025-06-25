@@ -1,40 +1,66 @@
 <template>
   <div>
-    <NuxtLink
-      :to="`/resource/${resource.key}`"
-      class="group relative block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+    <component
+      :is="resource.link ? 'a' : NuxtLink"
+      v-bind="linkProps"
+      class="group relative block bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0fb2b1]"
     >
-      <div class="flex flex-col">
-        <div class="flex-shrink-0 flex items-center justify-center p-5 bg-blue-50">
-          <div class="w-24 h-24 flex items-center justify-center">
+      <div class="p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex-shrink-0 bg-white rounded-full p-2">
             <img
               :src="resource.logo"
-              :alt="resource.title + ' logo'"
-              class="w-auto h-18 object-contain"
+              :alt="`${resource.title} logo`"
+              class="w-auto h-14 object-contain"
             />
           </div>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase bg-[#f7e7f1] text-[#b20f72] rounded-full">
+            {{ resource.key }}
+          </span>
         </div>
 
-        <div class="p-5 flex flex-col justify-between flex-1">
-          <div>
-            <span class="text-sm font-medium text-cyan-600 uppercase">
-              {{ resource.key }}
-            </span>
-            <h2 class="mt-1 text-xl font-semibold text-gray-900">
-              {{ resource.title }}
-            </h2>
-            <p class="mt-2 text-gray-600">
-              {{ resource.description }}
-            </p>
-          </div>
+        <h2 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#0fb2b1] transition-colors duration-200">
+          {{ resource.title }}
+        </h2>
+
+        <p class="text-gray-600 flex-1">
+          {{ resource.description }}
+        </p>
+
+        <div class="mt-4 flex items-center justify-end">
+          <svg
+            class="w-5 h-5 text-gray-400 group-hover:text-[#0fb2b1] transition-colors duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
         </div>
       </div>
-    </NuxtLink>
+    </component>
   </div>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { NuxtLink } from '#components'
 import type { Resource } from '@/composables/useResource'
 
-const { resource } = defineProps<{ resource: Resource }>()
+const props = defineProps<{ resource: Resource }>()
+
+const linkProps = computed(() =>
+  props.resource.link
+    ? {
+        href: props.resource.link,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      }
+    : {
+        to: `/resource/${props.resource.key}`,
+      }
+)
 </script>

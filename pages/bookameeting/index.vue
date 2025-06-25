@@ -35,7 +35,7 @@
       </div>
       <div class="w-full bg-gray-200">
         <client-only>
-          <CalendlyInline url="https://calendly.com/mehdi-bouzouita-4betterdevices" />
+          <CalendlyInline url="https://calendly.com/heartbeat-4betterdevices/erstgesprach" />
         </client-only>
       </div>
     </div>
