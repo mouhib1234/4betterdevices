@@ -5,6 +5,7 @@ import StethoscopeIcon from "~/assets/icons/stethoscopeIcon.vue";
 import SurgicalknifeIcon from "~/assets/icons/surgicalknifeIcon.vue";
 import WarningIcon from "~/assets/icons/WarningIcon.vue";
 
+
 export interface Service {
   icon: Component;
   name: string;
@@ -48,3 +49,22 @@ export const services: Service[] = [
       'We offer strategic guidance on biocompatibility assessment in line with ISO 10993, including gap analysis, test planning, and coordination with certified laboratories, to ensure the biological safety of medical devices and meet regulatory expectations efficiently.',
   },
 ];
+
+export function getServiceByName(name: string): Service | null {
+  return services.find(service => service.name === name) || null
+}
+
+export function useService(name: Ref<string> | string) {
+  const service = ref<Service | null>(
+    getServiceByName(typeof name === 'string' ? name : name.value)
+  )
+
+  if (typeof name !== 'string') {
+    watch(name, (newName) => {
+      service.value = getServiceByName(newName)
+    })
+  }
+  const notFound = computed(() => service.value === null)
+
+  return { service, notFound }
+}

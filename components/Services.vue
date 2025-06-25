@@ -3,7 +3,7 @@
     id="services"
     aria-labelledby="services-heading"
     class="relative overflow-hidden py-8 sm:py-8
-           bg-gray-50
+           bg-white
            backdrop-blur-sm border border-gray-100"
   >
     <div
