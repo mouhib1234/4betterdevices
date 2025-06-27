@@ -1,6 +1,5 @@
 <template>
-  <NuxtLink :to="`/`">
-    <!--:to="`/service/${service.name}`-->
+  <NuxtLink :to="`/service/${service.name}`">
     <div
       class="relative group p-6 
             bg-white 
@@ -32,11 +31,10 @@
         class="mb-4 font-normal
               bg-clip-text text-gray-500
             group-hover:text-white group-hover:bg-none
-              transition-colors duration-300"
+              transition-colors duration-300 line-clamp-4"
       >
         {{ service.description }}
       </p>
-<!-- line-clamp-4-->
     </div>
   </NuxtLink>
 </template>

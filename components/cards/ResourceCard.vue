@@ -27,19 +27,6 @@
           <p class="text-gray-600 flex-1">
             {{ resource.description }}
           </p>
-
-          <div class="mt-4 flex items-center justify-end">
-            <svg
-              class="w-5 h-5 text-gray-400 group-hover:text-[#0fb2b1] transition-colors duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </div>
         </div>
       </component>
     </div>
@@ -60,7 +47,6 @@ const linkProps = computed(() =>
 </script>
 
 <style scoped>
-/* ========== Outer folder shell ========== */
 .folder-wrapper {
   position: relative;
   background: #C2F0EA;  
@@ -78,10 +64,9 @@ const linkProps = computed(() =>
 }
 .folder-wrapper:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 16px 16px rgba(0,0,0,0.1);
 }
 
-/* ========== Inner white card ========== */
 .folder-card {
   display: block;
   width: 100%;
