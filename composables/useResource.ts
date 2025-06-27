@@ -87,23 +87,23 @@ export const resources: Resource[] = [
     title: 'Automated Review',
     logo: evidenceLogo,
     description:
-      'Evidence is our lightweight client app for on the go data capture and verification.',
+      'Our all-in-one solution for clinical evaluations, state-of-the-art, and post-market literature analyses. Automated. Compliant.',
     link: 'https://evidence.systems/',
   },
   {
     key: Software.RaqaStore,
-    title: 'Regulatory Search Engine',
+    title: 'Regulatory search engine',
     logo: RaqaLogo,
     description:
-      'Raqa Store powers your full-stack regulatory listings, search, and analytics dashboard.',
+      'Instant access to guidance, recalls, safety notices, and notified body publications. All in one place. Always up to date.',
     link: '',
   },
   {
     key: Software.Guidances,
-    title: 'Guidance & Newsletter',
+    title: 'Our Guides - Practical, Sharp, Free',
     logo: GuidanceLogo,
     description:
-      'All the latest guidance documents and our periodic newsletters in one place.',
+      'Straight to the point. Regulatory insights you can actually use — no fluff, no filler.',
     link: '',
     posts: guidancePosts,
   },

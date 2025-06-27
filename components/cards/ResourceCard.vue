@@ -5,7 +5,7 @@
       v-bind="linkProps"
       class="group relative block bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0fb2b1]"
     >
-      <div class="p-6 flex flex-col h-full">
+      <div class="p-6 flex flex-col min-h-70">
         <div class="flex items-start justify-between mb-4">
           <div class="flex-shrink-0 bg-white rounded-full p-2">
             <img
