@@ -16,7 +16,7 @@ import { ref, type Ref } from 'vue'
 
 export enum Software {
   Evidence  = 'evidence',
-  RaqaStore = 'raqaStore',
+  RaqaStore = 'raqa Store',
   Guidances = 'Guidance',
 }
 
@@ -84,7 +84,7 @@ const guidancePosts: Post[] = [
 export const resources: Resource[] = [
   {
     key: Software.Evidence,
-    title: 'Automated Review',
+    title: 'Evidence - Automated Review',
     logo: evidenceLogo,
     description:
       'Our all-in-one solution for clinical evaluations, state-of-the-art, and post-market literature analyses. Automated. Compliant.',
@@ -92,7 +92,7 @@ export const resources: Resource[] = [
   },
   {
     key: Software.RaqaStore,
-    title: 'Regulatory search engine',
+    title: 'Raqa - Regulatory search engine',
     logo: RaqaLogo,
     description:
       'Instant access to guidance, recalls, safety notices, and notified body publications. All in one place. Always up to date.',
