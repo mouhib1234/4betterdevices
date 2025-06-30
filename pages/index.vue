@@ -1,5 +1,4 @@
 <template>
-    <Navbar/>
     <Hero/> 
     <Resources/>
     <Services/>
@@ -7,3 +6,10 @@
     <GetInTouch/>
     <Footer/>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+  layout: 'default',
+});
+
+</script>

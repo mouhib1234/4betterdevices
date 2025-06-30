@@ -1,20 +1,12 @@
 <template>
-  <div v-if="!notFound" class="py-8 px-4 md:px-6 lg:px-8 bg-gray-50">
-    <NuxtLink to="/" class="inline-flex items-center text-sm font-medium text-[#0fb2b1] hover:text-[#0b7e7e] transition mb-4">
-      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-      Back to Services
-    </NuxtLink>
+  <div v-if="!notFound">
+    <div>
+      <banner :service="service!" />
+    </div>
+    <div class="max-w-6xl mx-auto bg-white rounded-lg overflow-hidden">
 
-    <div class="max-w-5xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-      <header class="px-6 py-8 border-b border-gray-200 flex items-center space-x-4">
-        <h1 class="text-4xl font-bold text-gray-900">
-          {{ service?.name }}
-        </h1>
-      </header>
 
-      <section class="px-6 py-6 border-b border-gray-200">
+      <section class="px-6 py-6">
         <p class="text-lg leading-relaxed text-gray-700">
           {{ service?.description }}
         </p>
@@ -25,7 +17,7 @@
           <div
             v-for="(card, i) in cards"
             :key="i"
-            class="flex flex-col lg:flex-row items-start bg-white rounded-lg shadow hover:shadow-lg transition p-6"
+            class="flex flex-col lg:flex-row items-start bg-white rounded-lg hover:shadow-lg transition p-6"
             :class="{ 'lg:flex-row-reverse': i % 2 === 1 }"
           >
             <img
@@ -55,6 +47,11 @@
 import { useRoute } from 'vue-router'
 import { useService } from '~/composables/useService'
 import { reactive } from 'vue'
+import Banner from '@/components/banners/servicebanner.vue'
+
+definePageMeta({
+  layout: 'servicelayout',
+});
 
 const route = useRoute()
 const nameParam = String(route.params.name)

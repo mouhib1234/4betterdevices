@@ -52,8 +52,8 @@
           class="cursor-pointer transition"
           :class="[
             idx === 1
-              ? 'w-full sm:w-1/2 z-20 transform -translate-y-2 scale-110 shadow-2xl opacity-100'
-              : 'hidden sm:block sm:w-1/3 transform scale-90 opacity-75'
+              ? 'w-full sm:w-1/2 z-20 transform -translate-y-2 scale-110 shadow-2xl opacity-100 rounded-2xl'
+              : 'hidden sm:block sm:w-1/3 transform scale-90 opacity-60 rounded-2xl'
           ]"
         >
           <TestimonialCard :testimonial="item" />
