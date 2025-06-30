@@ -1,11 +1,10 @@
 <template>
   <section
     class="relative w-full bg-cover bg-center"
-    :style="{ backgroundImage: `url(${props?.service?.imageUrl})` }"
+    :style="{ backgroundImage: `url(${props?.resource?.backgroundImg})` }"
   >
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-black/25"></div>
     <div class="relative mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-20 max-w-6xl">
-      
       <NuxtLink
         to="/"
         class="inline-flex items-center text-lg font-medium text-white/80 hover:text-white transition"
@@ -17,7 +16,7 @@
       </NuxtLink>
 
       <h1 class="text-white font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mt-6">
-        {{ props?.service?.name }}
+        {{ props?.resource?.title }}
       </h1>
     </div>
   </section>
@@ -26,7 +25,7 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-  service: Service
+  resource: Resource
 }>()
 
 </script>

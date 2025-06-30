@@ -34,6 +34,7 @@ export interface Resource {
   description: string
   link: string
   posts?: Post[]
+  backgroundImg?: string
 }
 
 const guidancePosts: Post[] = [
@@ -89,6 +90,7 @@ export const resources: Resource[] = [
     description:
       'Our all-in-one solution for clinical evaluations, state-of-the-art, and post-market literature analyses. Automated. Compliant.',
     link: 'https://evidence.systems/',
+    backgroundImg: 'https://images.unsplash.com/photo-1630155923002-17db0f219f1f?q=80&w=1332&auto=format&fit=crop',
   },
   {
     key: Software.RaqaStore,
@@ -97,6 +99,7 @@ export const resources: Resource[] = [
     description:
       'Instant access to guidance, recalls, safety notices, and notified body publications. All in one place. Always up to date.',
     link: '',
+    backgroundImg: 'https://images.unsplash.com/photo-1630155923002-17db0f219f1f?q=80&w=1332&auto=format&fit=crop',
   },
   {
     key: Software.Guidances,
@@ -106,6 +109,7 @@ export const resources: Resource[] = [
       'Straight to the point. Regulatory insights you can actually use — no fluff, no filler.',
     link: '',
     posts: guidancePosts,
+    backgroundImg: 'https://images.unsplash.com/photo-1630155923002-17db0f219f1f?q=80&w=1332&auto=format&fit=crop',
   },
 ]
 

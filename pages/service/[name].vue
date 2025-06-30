@@ -4,20 +4,18 @@
       <banner :service="service!" />
     </div>
     <div class="max-w-6xl mx-auto bg-white rounded-lg overflow-hidden">
-
-
-      <section class="px-6 py-6">
+     <section class="px-6 py-12 lg:py-8">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">About This Service</h2>
         <p class="text-lg leading-relaxed text-gray-700">
           {{ service?.description }}
         </p>
       </section>
-
       <section class="px-6 py-10">
-        <div class="space-y-8">
+        <div class="space-y-10">
           <div
             v-for="(card, i) in cards"
             :key="i"
-            class="flex flex-col lg:flex-row items-start bg-white rounded-lg hover:shadow-lg transition p-6"
+            class="flex flex-col lg:flex-row items-start bg-white rounded-lg hover:shadow-lg transition"
             :class="{ 'lg:flex-row-reverse': i % 2 === 1 }"
           >
             <img

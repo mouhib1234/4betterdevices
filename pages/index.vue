@@ -4,7 +4,6 @@
     <Services/>
     <Testimonials/>
     <GetInTouch/>
-    <Footer/>
 </template>
 
 <script setup lang="ts">

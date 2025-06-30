@@ -7,14 +7,14 @@
   >
     <nav class="mx-auto flex items-center p-0" aria-label="Global">
       <div class="flex">
-        <a href="#" class="-m-1.5 p-1.5">
+        <NuxtLink  class="-m-1.5 p-1.5" to="/">
           <span class="sr-only">Your Company</span>
-          <img
-            class="h-8 w-auto"
-            :src="isScrolled ? LogoScrolled : LogoDefault"
-            alt="Company Logo"
-          />
-        </a>
+            <img
+              class="h-8 w-auto"
+              :src="isScrolled ? LogoScrolled : LogoDefault"
+              alt="Company Logo"
+            />
+        </NuxtLink>
       </div>
 
       <div class="flex lg:hidden ml-auto">
@@ -32,17 +32,17 @@
       </div>
 
       <div class="hidden lg:flex lg:items-center lg:ml-auto lg:gap-x-12">
-        <a
+        <NuxtLink  class="-m-1.5 p-1.5" 
           v-for="item in navigation"
           :key="item.name"
-          :href="item.href"
+          :to="item.href"
           :class="[
             'text-md font-semibold transition-colors duration-300',
             isScrolled ? 'text-gray-800' : 'text-white'
           ]"
         >
           {{ item.name }}
-        </a>
+        </NuxtLink>
 
         <a
           type="button"
