@@ -20,7 +20,7 @@
 
       <div class="relative z-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-6">
         <div v-for="resource in resources" :key="resource.title">
-          <ResourceCard :resource="resource" />
+          <ResourceCard :resource="resource"   watermark-width="80%" watermark-height="70%" />
         </div>
       </div>
     </div>

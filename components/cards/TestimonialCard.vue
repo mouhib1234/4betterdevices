@@ -1,5 +1,5 @@
 <template>
-  <figure class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl relative h-full">
+  <figure class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl relative">
     <div class="absolute top-6 left-4 text-[#b20f72] text-5xl select-none" aria-hidden="true">❝</div>
 
     <div class="relative mt-8 pl-2">
