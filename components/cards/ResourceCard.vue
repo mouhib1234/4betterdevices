@@ -4,10 +4,9 @@
       :is="resource.link ? 'a' : NuxtLink"
       v-bind="linkProps"
       class="folder-card group block
-             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0fb2b1]
              transition-transform hover:-translate-y-1 hover:shadow-xl"
     >
-      <div class="card-content bg-white shadow-lg p-6 flex flex-col min-h-70">
+      <div class="card-content bg-white shadow-lg p-6 flex flex-col min-h-70 rounded-2xl">
         <div class="flex items-start justify-between mb-4">
           <div class="flex-shrink-0 bg-white rounded-full p-2">
             <img
@@ -69,8 +68,6 @@ const linkProps = computed(() =>
 }
 
 .card-content {
-  background: white;
-  border-radius: 0.5rem;
   box-shadow:
     0 10px 15px -3px rgba(0,0,0,0.1),
     0 4px 6px   -4px rgba(0,0,0,0.1);
